@@ -182,6 +182,16 @@ nav {
     max-width: 163px;
     width: 100%;
 }
+.toggle i{
+    color: var(--white);
+}
+.toggle{
+    display: none;
+}
+.navbar_brand{
+    display: flex;
+    align-items: center;
+}
 
 /* banner */
 .banner {
@@ -517,4 +527,95 @@ nav {
 
 .lowerFooter a {
     color: var(--white);
+}
+/******************** responsive css ****************/
+/*  extra large screen -xl */
+@media screen and (max-width:1199px){
+     .col-xl-50{
+        width: 50%;
+    }
+    .col-xl-33{
+        width: 33.33%;
+    }
+}
+/* large screen -lg */
+@media screen and (max-width:991px){
+    .col-lg-30{
+        width: 30%;
+    }
+    .col-lg-70{
+        width: 70%;
+    }
+     nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar_brand{
+        /* background-color: bisque; */
+        width: 100%;
+        justify-content: space-between;
+    }
+    .toggle{
+        display: block;
+    }
+    .navIteams{
+        flex-direction: column;
+        display: none;
+    }
+    .navlinks{
+        flex-direction: column;
+    }
+    .navlinks li{
+        margin-left: 0;
+    }
+}
+/* medium screen -md */
+@media screen and (max-width:767px){
+    .col-md-100{
+        width: 100%;
+    }
+    .col-md-50{
+        width: 50%;
+    }
+    .col-md-33{
+        width: 33.33%;
+    }
+   .banner_content h1,h2{
+    font-size: 20px;
+   }
+   .banner_text1{
+    font-size: 20px;
+   }
+   .banner_button a{
+    font-size: 15px;
+   }
+   .common_button{
+    padding: 5px 10px;
+   }
+   .content_text{
+    font-size: 15px;
+   }
+   .content h2,p{
+    font-size: 15px;
+   }
+   .section_text{
+    font-size: 15px;
+   }
+}
+/* small screen -sm*/
+@media screen and (max-width:575px){
+    .col-sm-100{
+        width: 100%;
+    }
+    .col-sm-50{
+        width: 50%;
+    }
+    .col-sm-33{
+        width: 33.33%;
+    }
+    
+}
+/*  extra small screen -xs */
+@media screen and (max-width:468px){
+  
 }
